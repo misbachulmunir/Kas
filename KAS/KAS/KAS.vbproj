@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77292F88-D40F-4A95-BFCA-FBF401A267A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KAS.My.MyApplication</StartupObject>
+    <RootNamespace>KAS</RootNamespace>
+    <AssemblyName>KAS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KAS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KAS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bagofmoney_5108.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.Designer.vb">
+      <DependentUpon>admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anggota.Designer.vb">
+      <DependentUpon>anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlaporansaldo.Designer.vb">
+      <DependentUpon>formlaporansaldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formlaporansaldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_laporansaldonya.Designer.vb">
+      <DependentUpon>form_laporansaldonya.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_laporansaldonya.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_laporan_anggota.Designer.vb">
+      <DependentUpon>Form_laporan_anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_laporan_anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_laporan_bulanan.Designer.vb">
+      <DependentUpon>form_laporan_bulanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_laporan_bulanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_laporan_hutang.Designer.vb">
+      <DependentUpon>Form_laporan_hutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_laporan_hutang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_laporan_pemasukan.Designer.vb">
+      <DependentUpon>Form_laporan_pemasukan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_laporan_pemasukan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_laporan_pengeluaran.Designer.vb">
+      <DependentUpon>Form_laporan_pengeluaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_laporan_pengeluaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_laporan_seluruh_pemasukan.Designer.vb">
+      <DependentUpon>form_laporan_seluruh_pemasukan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_laporan_seluruh_pemasukan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_bulanan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporan_bulanan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporan_hutangnya_anggota.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporan_hutangnya_anggota.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporan_saldonyaya.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporan_saldonyaya.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pemasukanlainrepot.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pemasukanlainrepot.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportnya_pengeluaranlain.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportnya_pengeluaranlain.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report_anggota.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report_anggota.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anggota.resx">
+      <DependentUpon>anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlaporansaldo.resx">
+      <DependentUpon>formlaporansaldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_laporansaldonya.resx">
+      <DependentUpon>form_laporansaldonya.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_laporan_anggota.resx">
+      <DependentUpon>Form_laporan_anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_laporan_bulanan.resx">
+      <DependentUpon>form_laporan_bulanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_laporan_hutang.resx">
+      <DependentUpon>Form_laporan_hutang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_laporan_pemasukan.resx">
+      <DependentUpon>Form_laporan_pemasukan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_laporan_pengeluaran.resx">
+      <DependentUpon>Form_laporan_pengeluaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_laporan_seluruh_pemasukan.resx">
+      <DependentUpon>form_laporan_seluruh_pemasukan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_bulanan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporan_bulanan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_hutangnya_anggota.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporan_hutangnya_anggota.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_saldonyaya.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporan_saldonyaya.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pemasukanlainrepot.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pemasukanlainrepot.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportnya_pengeluaranlain.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportnya_pengeluaranlain.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_anggota.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_anggota.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32 Search-Male-User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bagofmoney_5108.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "KAS", "KAS\KAS.vbproj", "{77292F88-D40F-4A95-BFCA-FBF401A267A3}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Kas Installer", "Kas Installer\Kas Installer.vdproj", "{2D1EFA07-D9F1-41C7-A0DC-20283BD44092}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup Kas", "Setup Kas\Setup Kas.vdproj", "{B2BD862F-71BD-4EEA-9876-5E67B5286852}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SETUP64", "SETUP64\SETUP64.vdproj", "{E11D9B00-A7C5-4754-A87C-224006D87B2F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "KAS_PRO", "..\kas pro\KAS_PRO\KAS_PRO.vbproj", "{3D48A58B-6D33-4154-BEFE-8C2B39DD1816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77292F88-D40F-4A95-BFCA-FBF401A267A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77292F88-D40F-4A95-BFCA-FBF401A267A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77292F88-D40F-4A95-BFCA-FBF401A267A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77292F88-D40F-4A95-BFCA-FBF401A267A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1EFA07-D9F1-41C7-A0DC-20283BD44092}.Debug|Any CPU.ActiveCfg = Debug
+		{2D1EFA07-D9F1-41C7-A0DC-20283BD44092}.Release|Any CPU.ActiveCfg = Release
+		{B2BD862F-71BD-4EEA-9876-5E67B5286852}.Debug|Any CPU.ActiveCfg = Debug
+		{B2BD862F-71BD-4EEA-9876-5E67B5286852}.Release|Any CPU.ActiveCfg = Release
+		{E11D9B00-A7C5-4754-A87C-224006D87B2F}.Debug|Any CPU.ActiveCfg = Debug
+		{E11D9B00-A7C5-4754-A87C-224006D87B2F}.Release|Any CPU.ActiveCfg = Release
+		{3D48A58B-6D33-4154-BEFE-8C2B39DD1816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D48A58B-6D33-4154-BEFE-8C2B39DD1816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D48A58B-6D33-4154-BEFE-8C2B39DD1816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D48A58B-6D33-4154-BEFE-8C2B39DD1816}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
